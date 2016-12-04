@@ -1,32 +1,31 @@
-figure.mainpage{
+header,figure{
     text-align: center
 }
-header{
+header.mainpage{
 background-color: darkslategray;
 color:white;
-text-align: center;
 font-family: 'Prata', serif;
 font-size: 2em;
-margin: 5px;
-padding: 10px
 }
 
-main{
+body>main{
   font-family: 'Alegreya', serif;
   font-size: larger;
-  padding: 0px 200px 0px 200px;
-
-}
-@media (max-width:800px){
-    header>h1{
-    font-size: 1em;
-}
+  padding:0px 200px 0px 200px ;
 }
 footer {
-    padding: 0px 200px 0px 200px;
-    font-size: smaller;
-    font-style: italic
+    font-size: 1em;
+    font-style: italic;
+    padding:0px 200px 0px 200px
 }
 a{
     color: seagreen
+}
+@media (max-width:1000px){
+body>main,footer{
+   padding:0px 0px 0px 0px ;
+}
+h1{
+font-size: smaller
+}
 }
