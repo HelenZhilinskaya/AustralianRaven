@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   
-<head></head>
-<body>
+<head>
+<meta charset="utf-8">
+<title> Evolution </title>
+<link rel="stylesheet" href="css\main.css">
+<link rel="canonical" href="//en.wikipedia.org/wiki/Australian_raven">
 
+<!-- Web Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+
+</head>
+<body>
+    <header class="mainpage">
+    <h1 class="mainpage">Australian Raven</h1>
+     </header>
+    <nav>
+        <ul>
+            <li><a href="evolution.html" target="_parent">Evolution</a></li>
+            <li>Description</li>
+            <li>Behavior</li>
+            <li>Pictures</li>
+            <li>Legends</li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+The Australian raven's closest relatives are the other two species of raven occurring in Australia: the little raven and forest raven. The Australian raven is also somewhat closely related to the Torresian and little crow, although not as closely related as it is to the other raven species. Initial single gene genetic analysis of the genus using mitochondrial DNA showed the three raven species to belong to one lineage and the two crows to another. The genetic separation between species is small and there was a suggestion the little raven may be nested within the Australian raven, though the authors conceded more genetic work was needed.[18] Subsequent multigene analysis using nuclear DNA by Jønsson and colleagues in 2012 showed the eastern and western subspecies of the Australian raven to form two clades, almost as genetically distinct as the forest and little raven are to each other. This led the authors to propose that the subspecies be recognised as separate species.[19]
+
+Ian Rowley proposed that the common ancestor of the five species diverged into a tropical crow and temperate raven sometime after entering Australia from the north,[20] which molecular evidence indicates occurred in the early Pliocene epoch around 4 million years ago.[19] The raven diverged into the ancestor of the forest and little ravens in the east and Australian raven in the west,[20] this split occurring around 2 million years ago in the early Pleistocene.[19] As the climate became cooler and dryer, the aridity of central Australia split them entirely. Furthermore, the eastern birds diverged into nomadic little ravens and, in forested refuges, forest ravens. As the climate eventually became warmer, the western birds spread eastwards and almost outcompeted forest ravens on mainland Australia. Rowley noted that the western subspecies of the Australian raven had features intermediate between the eastern subspecies of Australian and little ravens.[20]
+
+Two subspecies are recognised:
+
+C. c. coronoides, the nominate or eastern subspecies, is found across most of eastern Australia.[4] Its range is also highly correlated with the presence of sheep. This is thought to be because of the frequency of dead animals, which can be an important source of food. Ornithologist Ian Rowley held that the eastern subspecies was expanding eastwards before European colonisation, and that this suggested it was of younger origin than the western subspecies, which appears static. The advent of agriculture facilitated further spread.[5]
+
+Subspecies perplexus, Perth, WA, showing smaller hackles
+C. c. perplexus, the western subspecies, occurs from the head of the Great Australian Bight in South Australia westwards into Western Australia where its northern limits are Shark Bay and the mulga-eucalypt boundary line.[4] It is less specialised in its habitat, as it does not share its distribution with the little raven, and does not appear to correlate with the range of sheep.[5] The western subspecies has a slightly lower-pitched call than that of the eastern subspecies,[21] with similarities to calls of the little raven. Of smaller size overall, it has a more slender bill and shorter hackles. There is otherwise no difference in plumage.[22] Intermediate birds are found in the Eyre Peninsula, Gawler Ranges and vicinity of Lake Eyre in South Australia.[4]
+    </main>
+<footer role="contentinfo">
+<p id="copyright">The text content of this site was lovingly borrowed from <a href="//en.wikipedia.org/wiki/Australian_raven">the Wikipedia article on Australian Raven </a> on <time>03 December 2016</time> under the <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a>. Licensing terms of content from other sources (photos, etc.) is noted along with each respective resource.</p>
+</footer>
 </body>
 </html>
