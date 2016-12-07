@@ -3,10 +3,21 @@ header,figure{
 }
 header.mainpage{
 background-color: darkslategray;
+border-radius: 10px 10px 10px 10px;
+margin: 0px 100px 0px 100px;
 color:white;
 font-family: 'Prata', serif;
-font-size: 2em;
-padding:5px 100px 5px 100px;
+font-size: xx-large;
+
+}
+nav{
+font-family: 'Prata', serif;
+font-size: xx-large;
+text-align: center;
+background-color: darkseagreen;
+margin: 0px 200px 0px 200px;
+border: 2px ,solid, darkolivegreen;
+border-radius: 10px 10px 10px 10px;
 }
 
 body>main{
@@ -16,7 +27,9 @@ body>main{
 }
 footer {
 font-style: italic;
-padding:20px 200px 20px 200px;
+padding:0px 100px 0px 100px;
+margin: 0px 100px 0px 100px;
+border-radius: 10px 10px 10px 10px;
 background-color: darkslategray;
 color:white;
 font-family: 'Prata', serif;
@@ -27,8 +40,30 @@ a{
 @media (max-width:1000px){
 body>main,footer,header.mainpage{
    padding:0px 0px 0px 0px ;
+   margin: 0px 0px 0px 0px
 }
 h1{
 font-size: smaller
 }
+nav{
+   padding:0px 0px 0px 0px ;
+   margin: 0px 0px 0px 0px;
+   font-size: smaller
 }
+}
+ul{
+    word-spacing: 30px
+}
+li{
+    display: inline-block;
+}
+li>a{
+text-decoration: none;
+color: black
+}
+li>a:hover{
+      border-radius: 20px 5px;
+      background-color: white;
+
+}
+
