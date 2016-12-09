@@ -10,38 +10,121 @@
 <!-- Web Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+<!--Up button-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
 
+<style>
+    ul>li.evolution{border-radius: 20px 5px;
+      background-color: white;
+    }
+</style>
 </head>
 <body>
-    <header class="mainpage">
-    <h1 class="mainpage">Australian Raven</h1>
+    <header class="evolution">
+    <h1 class="evolution">Australian Raven</h1>
      </header>
     <nav>
-        <ul>
-            <li> <a href="index.html" target="_self">Home</a></li>
-            <li><a href="evolution.html" target="_self">Evolution</a></li>
-            <li>Description</li>
-            <li>Behavior</li>
-            <li>Pictures</li>
-            <li>Legends</li>
+        <ul class="navigation">
+             <li class="mainpage"> <a href="index.html" target="_self">Home</a></li>
+            <li class="evolution"> <a href="evolution.html" target="_self">Evolution</a></li>
+            <li class="description"><a href="description.html" target="_self">Description</a></li>
+            <li class="behavior"><a href="behavior.html" target="_self">Behavior</a></li>
+            <li class="legends"><a href="legends.html" target="_self">Legends</a></li>
         </ul>
     </nav>
     <hr>
-    <main>
-The Australian raven's closest relatives are the other two species of raven occurring in Australia: the little raven and forest raven. The Australian raven is also somewhat closely related to the Torresian and little crow, although not as closely related as it is to the other raven species. Initial single gene genetic analysis of the genus using mitochondrial DNA showed the three raven species to belong to one lineage and the two crows to another. The genetic separation between species is small and there was a suggestion the little raven may be nested within the Australian raven, though the authors conceded more genetic work was needed.[18] Subsequent multigene analysis using nuclear DNA by Jønsson and colleagues in 2012 showed the eastern and western subspecies of the Australian raven to form two clades, almost as genetically distinct as the forest and little raven are to each other. This led the authors to propose that the subspecies be recognised as separate species.[19]
+    <main class="evolution">
+<section id="Taxonomy">
+<h2>Taxonomy and naming</h2>
+<p> Australian raven was first described by Nicholas Aylward Vigors and Thomas Horsfield in 1827, when they reported <a href="//en.wikipedia.org/wiki/George_Caley" target="_blank"> George Caley</a>'s 
+early notes on the species from the Sydney district. Its specific epithet <i lang="la">coronoides</i> "crow-shaped" is derived from the Greek <i lang="Greek"> corone/κορόνη</i> "crow" 
+and <i lang="Greek"> eidos/είδος</i> "shape" or "form".The two naturalists regarded the Australian raven as very similar in appearance to the carrion crow (C. corone) of Europe,
+though they noted <strong> was larger with a longer bill</strong>. They did not give it a common name. The location where the type specimen was collected is not recorded, 
+but thought to be in the <i>Parramatta</i> district.</p>
+<p> Christian Ludwig Brehm described <i lang="la"> Corvus affinis </i> in 1845,later determined to be this species.
+In his 1865 <a href="//en.wikipedia.org/wiki/Handbook_to_the_Birds_of_Australia" target="_blank"> Handbook to the Birds of Australia</a>, <a href="//en.wikipedia.org/wiki/John_Gould" target="_blank"> 
+John Gould</a> recognised only one species of corvid in Australia, <i lang="la">Corvus australis </i>,which he called <strong> the white-eyed crow</strong>.
+<p> He used Johann Friedrich Gmelin's 1788 name, which predated Vigors and Horsfield's description.
+    <img src="pictures\AustralianRavenSydneyUniversity320.jpg" align="right"/> 
+In 1877 Richard Bowdler Sharpe recognised two species, but recorded that the feather bases of the type specimen of C. coronoides were white. 
+He named <i lang="la">C. coronoides</i> as the "crow" and C. australis (as <i lang="la">Corone australis</i>) the "raven". Scottish naturalist William Robert Ogilvie-Grant 
+corrected this in 1912 after re-examining the type specimen, clarifying the species as <i lang="la">C. coronoides</i> (raven, and incorporating little and forest ravens) 
+and <i lang="la">C. cecilae</i> (Torresian crow).</p> 
+<a href="//en.wikipedia.org/wiki/Gregory_Mathews" target="_blank">Gregory Mathews </a> described the western subspecies <i lang="la">perplexus</i> in 1912, naming it the southwestern crow and noting that it was smaller than the nominate subspecies.
+He called <i lang="la">C.coronoides coronoides</i> the eastern crow, listing its range as New South Wales, and described what is now the Australian crow as another subspecies, C. 
+<i lang="la">coronoides cecilae</i>, calling it the north-western crow and recording its range as northwestern Australia. 
+In the same work he listed the raven as <i lang="la">Corvus marianae</i>, with a type specimen from Gosford and listing its range as New South Wales. 
+He listed the <a href="//en.wikipedia.org/wiki/Little_raven" target="_blank"> little raven</a> and<a href="//en.wikipedia.org/wiki/Forest_raven" target="_blank"> forest raven </a> as subspecies.
+Mathews had erected <i lang="la">C. marianae</i> in 1911 as the name after declaring <i lang="la">Corvus australis</i> Gould to be preoccupied.
+<p>French-American ornithologist <a href="//en.wikipedia.org/wiki/Charles_Vaurie"> Charles Vaurie </a> acted as First Revisor under Article 24 of the International Code of Zoological Nomenclature (ICZN) 
+Code and discarded <i lang="la">C. australis</i> as a junior homonym—in 1788, Gmelin had used the same binomial name to describe the black nunbird—to preserve the stability of the name. This has been followed 
+by later authors.</p>
 
-Ian Rowley proposed that the common ancestor of the five species diverged into a tropical crow and temperate raven sometime after entering Australia from the north,[20] which molecular evidence indicates occurred in the early Pliocene epoch around 4 million years ago.[19] The raven diverged into the ancestor of the forest and little ravens in the east and Australian raven in the west,[20] this split occurring around 2 million years ago in the early Pleistocene.[19] As the climate became cooler and dryer, the aridity of central Australia split them entirely. Furthermore, the eastern birds diverged into nomadic little ravens and, in forested refuges, forest ravens. As the climate eventually became warmer, the western birds spread eastwards and almost outcompeted forest ravens on mainland Australia. Rowley noted that the western subspecies of the Australian raven had features intermediate between the eastern subspecies of Australian and little ravens.[20]
+German ornithologist <a href="//en.wikipedia.org/wiki/Erwin_Stresemann" target="_blank"> Erwin Stresemann</a> lumped all Australian corvids plus other species as far as India into a single species, <i lang="la">C. coronoides</i>, as he believed 
+there was intergradation between all characteristics such as iris colour, colour of feather bases and plumage. This was hotly disputed by Mathews.
+The official <abbr title="Royal Australasian Ornithologists Union" >RAOU</abbr> checklist listed three species (Australian raven, Torresian crow and little crow), with the little raven recognised as a fourth 
+species in 1967 and forest raven in 1970. 
+<p> Streseman described <i lang="la">C. difficilis </i> in 1943 from a single specimen, now thought to have been an unusual
+Australian raven or an Australian raven/Torresian crow hybrid.
+Alternative names sometimes seen include southern raven, southern crow and Kelly, the last thought to have alluded to the Kelly Gang, 
+though did not appear until the 1920s. Southern crow was considered by the <abbr title="Royal Australasian Ornithologists Union" >RAOU</abbr> before Australian raven was adopted as the official name for
+the species in 1926. The term "crow" is colloquially applied to any or all species of Australian corvid. 
+The Australian raven was called <i>wugan</i> by the local <a href="//en.wikipedia.org/wiki/Eora" target="_blank"> Eora</a> and  <a href="//en.wikipedia.org/wiki/Darug" target="_blank"> Darug</a> inhabitants of the Sydney Basin.</p>
+</section>
 
-Two subspecies are recognised:
+<section id="evolution">
+<h2>Evolution and systematics</h2>
+<p>The Australian raven's closest relatives are the other two species of raven occurring in Australia: the little raven and forest raven. 
+The Australian raven is also somewhat closely related to the Torresian and little crow, although not as closely related as it is to the other raven species. 
+Initial single gene genetic analysis of the genus using mitochondrial DNA showed the three raven species to belong to one lineage and the two crows to another. 
+The genetic separation between species is small and there was a suggestion the little raven may be nested within the Australian raven, though the authors 
+conceded more genetic work was needed.</p> 
 
-C. c. coronoides, the nominate or eastern subspecies, is found across most of eastern Australia.[4] Its range is also highly correlated with the presence of sheep. This is thought to be because of the frequency of dead animals, which can be an important source of food. Ornithologist Ian Rowley held that the eastern subspecies was expanding eastwards before European colonisation, and that this suggested it was of younger origin than the western subspecies, which appears static. The advent of agriculture facilitated further spread.[5]
+<p>Subsequent multigene analysis using <a href="en.wikipedia.org/wiki/Nuclear_DNA">nuclear DNA</a> by Jønsson and colleagues in 2012 showed the eastern and western subspecies of the Australian raven to form two clades, almost as 
+genetically distinct as the forest and little raven are to each other. This led the authors to propose that the subspecies be recognised as separate species.</p>
 
-Subspecies perplexus, Perth, WA, showing smaller hackles
-C. c. perplexus, the western subspecies, occurs from the head of the Great Australian Bight in South Australia westwards into Western Australia where its northern limits are Shark Bay and the mulga-eucalypt boundary line.[4] It is less specialised in its habitat, as it does not share its distribution with the little raven, and does not appear to correlate with the range of sheep.[5] The western subspecies has a slightly lower-pitched call than that of the eastern subspecies,[21] with similarities to calls of the little raven. Of smaller size overall, it has a more slender bill and shorter hackles. There is otherwise no difference in plumage.[22] Intermediate birds are found in the Eyre Peninsula, Gawler Ranges and vicinity of Lake Eyre in South Australia.[4]
+<p>Ian Rowley proposed that the common ancestor of the five species diverged into a tropical crow and temperate raven sometime 
+after entering Australia from the north, which molecular evidence indicates occurred in the early Pliocene epoch around
+4 million years ago.The raven diverged into the ancestor of the forest and little ravens in the east and Australian raven in the west,
+this split occurring around 2 million years ago in the early Pleistocene. </p>
+
+<p>As the climate became cooler and dryer, the aridity of central 
+Australia split them entirely. Furthermore, the eastern birds diverged into nomadic little ravens and, in forested refuges, forest ravens.
+As the climate eventually became warmer, the western birds spread eastwards and almost outcompeted forest ravens on mainland Australia. 
+Rowley noted that the western subspecies of the Australian raven had features intermediate between the eastern subspecies of Australian and little ravens.</p>
+
+<strong> Two subspecies are recognised:</strong>
+  <img src="pictures\Australianraven320.jpg" alt="Subspecies perplexus" align="left"/>
+<p><i class="taxonomy"> 1.C. c. coronoides</i>, the nominate or eastern subspecies, is found across most of eastern Australia.
+Its range is also highly correlated with the presence of sheep. This is thought to be because of the frequency of dead animals, which can be an
+ important source of food. Ornithologist Ian Rowley held that the eastern subspecies was expanding eastwards before European colonisation, and
+  that this suggested it was of younger origin than the western subspecies, which appears static. The advent of agriculture facilitated further spread.</p>
+<p><i class="taxonomy">2.C. c. perplexus</i>, the western subspecies, occurs from the head of the Great Australian Bight in South Australia westwards into Western Australia where its
+ northern limits are Shark Bay and the mulga-eucalypt boundary line. It is less specialised in its habitat, as it does not share its distribution with 
+ the little raven, and does not appear to correlate with the range of sheep.The western subspecies has a slightly lower-pitched call than that of the 
+ eastern subspecies, with similarities to calls of the little raven. Of smaller size overall, it has a more slender bill and shorter hackles. 
+ There is otherwise no difference in plumage.Intermediate birds are found in the Eyre Peninsula, Gawler Ranges and vicinity of Lake Eyre in South Australia.</p>
+</section>
     </main>
+    <div id = "toTop" > UP </div>
     <hr>
 <footer role="contentinfo">
 <p id="copyright">The text content of this site was lovingly borrowed from <a href="//en.wikipedia.org/wiki/Australian_raven">the Wikipedia article on Australian Raven </a> on <time>03 December 2016</time> under the <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a>. Licensing terms of content from other sources (photos, etc.) is noted along with each respective resource.</p>
 </footer>
 </body>
 </html>
+
