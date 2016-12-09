@@ -100,4 +100,7 @@ div.legendlinks{
     border-radius: 20px;
     font-family: 'Prata', serif;
 }
+a:hover{
+    color: lightsalmon
+}
 
