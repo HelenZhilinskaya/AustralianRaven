@@ -11,20 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 <!--Up button-->
-<script type="text/javascript">
-$(function() {
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#toTop').fadeIn();
-} else {
-$('#toTop').fadeOut();
-}
-});
-$('#toTop').click(function() {
-$('body,html').animate({scrollTop:0},800);
-});
-});
-</script>
+<script type="text/javascript" src="js\topbutton.js"></script>
 <style>
     ul>li.mainpage{border-radius: 20px 5px;
       background-color: white;
