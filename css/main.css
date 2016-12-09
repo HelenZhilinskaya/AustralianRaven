@@ -1,69 +1,103 @@
 header,figure{
-    text-align: center
+text-align: center
 }
-header.mainpage{
-background-color: darkslategray;
-border-radius: 10px 10px 10px 10px;
+h1{
+    margin-bottom: -20px; /* Отрицательный отступ между заголовком и навигационным меню */
+   }
+header{
+background-color: darkslategray !important;
+border-radius: 20px;
 margin: 0px 100px 0px 100px;
-color:white;
+color:white !important;
 font-family: 'Prata', serif;
 font-size: xx-large;
-
 }
 nav{
 font-family: 'Prata', serif;
 font-size: xx-large;
 text-align: center;
-background-color: darkseagreen;
+background-color: darkseagreen !important;
 margin: 0px 200px 0px 200px;
-border: 2px ,solid, darkolivegreen;
-border-radius: 10px 10px 10px 10px;
+border-radius:10px;
 }
-
 body>main{
-  font-family: 'Alegreya', serif;
-  font-size: larger;
-  padding:0px 200px 0px 200px ;
+font-family: 'Alegreya', serif;
+font-size: larger !important;
+padding:0px 200px 0px 200px ;
 }
 footer {
 font-style: italic;
 padding:0px 100px 0px 100px;
 margin: 0px 100px 0px 100px;
-border-radius: 10px 10px 10px 10px;
+border-radius: 10px;
 background-color: darkslategray;
 color:white;
 font-family: 'Prata', serif;
 }
 a{
-    color: mediumseagreen
+color: mediumseagreen
 }
-@media (max-width:1000px){
-body>main,footer,header.mainpage{
-   padding:0px 0px 0px 0px ;
-   margin: 0px 0px 0px 0px
-}
-h1{
-font-size: smaller
+@media (max-width:1000px){ /* Для экранов ширины менее 1000px */
+body>main,footer,header{
+padding:0px 0px 0px 0px ;
+margin: 0px 0px 0px 0px
 }
 nav{
-   padding:0px 0px 0px 0px ;
-   margin: 0px 0px 0px 0px;
-   font-size: smaller
-}
-}
-ul{
-    word-spacing: 30px
+padding:0px 0px 0px 0px ;
+margin: 0px 0px 0px 0px;
 }
 li{
-    display: inline-block;
+list-style-type: none
+}
+ul {
+margin-left: 0; 
+padding-left: 0
+}
+}/* Для экранов ширины менее 1000px */
+ul.navigation{
+word-spacing: 30px
+}
+@media(min-width:1000px){/* Для экранов ширины БОЛЕЕ 1000px */
+li{
+display: inline-block;/* Убирает буллеты (кружочки) и превращает список в горизонтальный*/
+}
 }
 li>a{
 text-decoration: none;
-color: black
+color: black !important;
 }
-li>a:hover{
-      border-radius: 20px 5px;
-      background-color: white;
-
+li>a:hover{/* Меняет цвет при наведении курсора*/
+border-radius: 20px 5px;
+background-color: white !important;
+}
+img{
+border-radius: 50px
+}
+#toTop {
+width:100px;
+border-radius: 20px;
+text-align:center;
+padding:5px;
+position:fixed;
+bottom:100px; /* Отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+background-color: lightslategray !important;
+color:white !important;
+font-family:'Prata', serif;
+font-weight: bold;
+font-size:20px;
+}
+video{
+    border-radius: 20px
+}
+div.legendlinks{
+    font-size: xx-large;
+    text-align: center;
+    background-color:darkseagreen;
+    color:white;
+    border-radius: 20px;
+    font-family: 'Prata', serif;
 }
 
