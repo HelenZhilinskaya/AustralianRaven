@@ -10,20 +10,39 @@
 <!-- Web Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
-
+<!--Up button-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<style>
+    ul>li.mainpage{border-radius: 20px 5px;
+      background-color: white;
+    }
+</style>
 </head>
 <body>
     <header class="mainpage">
     <h1 class="mainpage">Australian Raven</h1>
      </header>
-    <nav>
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li><a href="evolution.html" target="_self">Evolution</a></li>
-            <li>Description</li>
-            <li>Behavior</li>
-            <li>Pictures</li>
-            <li>Legends</li>
+    <nav role="navigation">
+        <ul class="navigation">
+           <li class="mainpage"> <a href="index.html" target="_self">Home</a></li>
+            <li class="evolution"> <a href="evolution.html" target="_self">Evolution</a></li>
+            <li class="description"><a href="description.html" target="_self">Description</a></li>
+            <li class="behavior"><a href="behavior.html" target="_self">Behavior</a></li>
+           <li class="legends"><a href="legends.html" target="_self">Legends</a></li>
         </ul>
     </nav>
    
@@ -50,7 +69,19 @@ However, this is very rare, and the raven most often scavenges for afterbirth an
 <br>
 <b>&#34 M is for MONOGAMY &#34</b>
 <p> Breeding takes place between July and September, with almost no variation across its range. The nest is a bowl-shaped structure of sticks sited high in a tree, or occasionally in a man-made structure such as a windmill or other building.</p>
+<hr>
+<div class="legendlinks">
+<p><b>Do you want to hear legends about Crows?Look no further:</b></p>
+<ul>
+    <li><a href="legends.html#Crows attacking spirits">Crows attacking spirits on the way to the afterlife</a></li>
+    <br>
+    <li><a href="legends.html#Crow steals fire">Crow steals fire</a></li>
+    <br>
+    <li><a href="legends.html#Crow and Magpie">Crow and Magpie</a></li>
+</ul>
+</div>
 		</main>
+         <div id = "toTop" > UP </div>
 <hr>
 <footer role="contentinfo">
 <p id="copyright">The text content of this site was lovingly borrowed from <a href="//en.wikipedia.org/wiki/Australian_raven">the Wikipedia article on Australian Raven </a> on <time>03 December 2016</time> under the <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a>. Licensing terms of content from other sources (photos, etc.) is noted along with each respective resource.</p>
