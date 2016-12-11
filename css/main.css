@@ -2,13 +2,13 @@ header,figure{
 text-align: center
 }
 h1{
-    margin-bottom: -20px; /* Отрицательный отступ между заголовком и навигационным меню */
-   }
+margin-bottom: -20px; /* Отрицательный отступ между заголовком и навигационным меню */
+}
 header{
-background-color: darkslategray !important;
+background-color: darkslategray ;
 border-radius: 20px;
 margin: 0px 100px 0px 100px;
-color:white !important;
+color:white ;
 font-family: 'Prata', serif;
 font-size: xx-large;
 }
@@ -16,13 +16,13 @@ nav{
 font-family: 'Prata', serif;
 font-size: xx-large;
 text-align: center;
-background-color: darkseagreen !important;
+background-color: darkseagreen;
 margin: 0px 200px 0px 200px;
 border-radius:10px;
 }
 body>main{
 font-family: 'Alegreya', serif;
-font-size: larger !important;
+font-size: larger ;
 padding:0px 200px 0px 200px ;
 }
 footer {
@@ -37,7 +37,7 @@ font-family: 'Prata', serif;
 a{
 color: mediumseagreen
 }
-@media (max-width:1000px){ /* Для экранов ширины менее 1000px */
+@media (max-width:1300px){ /* Для экранов ширины менее 1300px */
 body>main,footer,header{
 padding:0px 0px 0px 0px ;
 margin: 0px 0px 0px 0px
@@ -46,29 +46,31 @@ nav{
 padding:0px 0px 0px 0px ;
 margin: 0px 0px 0px 0px;
 }
-li{
-list-style-type: none
-}
 ul {
 margin-left: 0; 
-padding-left: 0
+padding-left: 0;
+list-style-type: none
 }
-}/* Для экранов ширины менее 1000px */
+#toTop{
+font-size: 50px;  
+opacity: 0.8
+}
+}/* Для экранов ширины менее 1300px */
 ul.navigation{
 word-spacing: 30px
 }
 @media(min-width:1000px){/* Для экранов ширины БОЛЕЕ 1000px */
-li{
+li.mainpage,li.evolution,li.description,li.behavior,li.legends{
 display: inline-block;/* Убирает буллеты (кружочки) и превращает список в горизонтальный*/
 }
 }
 li>a{
 text-decoration: none;
-color: black !important;
+color: black ;
 }
 li>a:hover{/* Меняет цвет при наведении курсора*/
 border-radius: 20px 5px;
-background-color: white !important;
+background-color: white ;
 }
 img{
 border-radius: 50px
@@ -83,17 +85,17 @@ bottom:100px; /* Отступ кнопки от нижнего края стра
 right:10px;
 cursor:pointer;
 display:none;
-background-color: lightslategray !important;
-color:white !important;
+background-color: lightslategray;
+color:white;
 font-family:'Prata', serif;
 font-weight: bold;
-font-size:20px;
+font-size:30px;
 }
 video{
     border-radius: 20px
 }
 div.legendlinks{
-    font-size: xx-large;
+    font-size: x-large;
     text-align: center;
     background-color:darkseagreen;
     color:white;
@@ -103,4 +105,9 @@ div.legendlinks{
 a:hover{
     color: lightsalmon
 }
-
+img[alt$=left]{
+    float:left
+}
+img[alt$=right]{
+    float: right
+}
